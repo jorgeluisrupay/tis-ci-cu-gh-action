@@ -11,8 +11,9 @@ describe('TextBox component',() => {
 
     let article;
     let button;
+    const textBox = () =>  render(<TextBox />);
     beforeEach(() => {
-        render(<TextBox />);
+        textBox();
         article = screen.getByRole('article',{name: 'párrafo principal'})
         button = screen.getByRole('button',{name: 'Pulsa para modificar'})
     })

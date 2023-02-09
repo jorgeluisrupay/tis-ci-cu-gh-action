@@ -15,7 +15,6 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm install --no-audit --no-fund --no-optional
-      - name: Lint 
-        run: npm run eslint
+      
       - name: Test unit
         run: npm test

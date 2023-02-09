@@ -5,8 +5,9 @@ describe('AcceptCookis component',() => {
 
     let checkbox;
     let article;
+    const acceptCookis = () => render(<AcceptCookis />);
     beforeEach(() => {
-        render(<AcceptCookis />);
+        acceptCookis();
         //screen.debug();
         checkbox = screen.getByLabelText('Acepta las cookies');
         article = screen.getByRole('article',{name : 'Confirmación cookies'});
