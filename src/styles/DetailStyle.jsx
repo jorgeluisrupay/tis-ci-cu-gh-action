@@ -11,6 +11,9 @@ export const ContainerDetail = styled.div`
     }
 `;
 export const DetailLeft = styled.div`
+display: flex;
+flex-direction: column;
+margin: 0 auto;
 @media screen and (max-width: 1000px) {
     display: grid;
     place-items: center;
@@ -92,9 +95,9 @@ export const CompanyElenco = styled.div`
 `;
 
 export const BtnGoBack = styled.div`
-    margin-top: 2em;
+    margin: 3em auto 0 auto;
     cursor: pointer;
-    width: auto;
+    width: 50%;
     text-align: center;
     background-color: #fff;
     color: #000;

@@ -15,6 +15,14 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm install --no-audit --no-fund --no-optional
-      
+
       - name: Test unit
         run: npm test
+      - name: Build
+        env:
+          NETLIFY_SITE_ID : ${{ secrets.NETLIFY_SITE_ID}}
+          NETLIFY_AUTH_TOKEN : ${{ secrets.NETLIFY_AUTH_TOKEN}}
+        run : |
+          npm
+          npm build
+          npx netlify-cli deploy --dir=public --prod
