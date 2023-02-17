@@ -23,6 +23,5 @@ jobs:
           NETLIFY_SITE_ID : ${{ secrets.NETLIFY_SITE_ID}}
           NETLIFY_AUTH_TOKEN : ${{ secrets.NETLIFY_AUTH_TOKEN}}
         run : |
-          npm
           npm build
           npx netlify-cli deploy --dir=public --prod
