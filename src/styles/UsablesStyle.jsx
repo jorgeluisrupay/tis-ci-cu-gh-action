@@ -20,6 +20,7 @@ export const TitlePage = styled.div`
 export const ContenedorModulo = styled.div`
   width: 100%;
   color: #fff;
+  margin-top: 30px;
 `;
 export const TablaContenedor = styled.div``;
 export const TablaSinDatos = styled.div`

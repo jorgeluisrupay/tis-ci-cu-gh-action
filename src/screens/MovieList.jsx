@@ -33,7 +33,7 @@ export const MovieList = () => {
   return (
     <ContenedorModulo>
       <TitlePage tabla="tabla">
-        <h1>App Pelis CI/CD</h1>
+        <h1>App Pelis</h1>
       </TitlePage>
       <br />
 
