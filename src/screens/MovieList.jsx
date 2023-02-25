@@ -107,7 +107,7 @@ export const MovieList = () => {
       <br />
       <br />
 
-      {false && <Search />} 
+      {true && <Search />} 
       <br />
       <br />
 
