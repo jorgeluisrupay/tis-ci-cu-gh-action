@@ -11,6 +11,7 @@ import {
 } from "../styles/UsablesStyle";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useNavigate } from "react-router-dom";
+import { Search } from "../components/Search";
 
 export const MovieList = () => {
   const { nowPlaying, popular, topRated, upComing, isLoading } = useMovies();
@@ -105,6 +106,11 @@ export const MovieList = () => {
       </ContainerBox>
       <br />
       <br />
+
+      {false && <Search />} 
+      <br />
+      <br />
+
       <TitleGenero>
             Popular
       </TitleGenero>

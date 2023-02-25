@@ -40,3 +40,42 @@ export const ContainerLoading = styled.div`
   align-items: center;
   height: 100vh;
 `;
+export const FormBox = styled.div`
+position: relative;
+padding: 1em 3em;
+  input{
+    width: 100%;
+    height: 50px;
+    border: 2px solid #aaa;
+    border-radius: 20px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    padding-left: 50px;
+    color: #fff;
+    &:focus{
+    border-color: dodgerBlue;
+    box-shadow: 0 0 8px 0 dodgerBlue;
+            }
+    }
+  i{
+    position: absolute;
+    left: 0;
+    top: 15px;
+    padding: 9px 18px;
+    color: #fff;
+    transition: 0.3s;
+  }
+  input:focus + i{
+    color: dodgerBlue;
+  }
+  .btn{
+    border: none;
+    background: #57B8FF;
+    color: #fff;
+    padding-left: 0;
+    cursor: pointer;
+  }
+`
