@@ -1,9 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { searchMovieDB } from "../api/mobieDB";
 import { CardContainer, CardSala, TitleGenero } from "../styles/CardStyle";
-import { ContainerLoading, FormBox } from "../styles/UsablesStyle";
-import { Loading } from "./Loading";
+import {  FormBox } from "../styles/UsablesStyle";
 
 export const Search = () => {
   const [search, setSearch] = useState("");
