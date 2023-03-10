@@ -12,16 +12,22 @@ import {
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { useNavigate } from "react-router-dom";
 import { Search } from "../components/Search";
+import { Button } from "../styles/LoginStyle";
 
-export const MovieList = () => {
+export const MovieList = ({logout}) => {
   const { nowPlaying, popular, topRated, upComing, isLoading } = useMovies();
   console.log(nowPlaying, popular, topRated, upComing, isLoading, "data");
   console.log(nowPlaying, "en cine");
   const navigate = useNavigate();
 
   const NavegatorDetail = (id) => {
-    navigate(`/detail/${id}`);
+    navigate(`/movie/detail/${id}`);
   };
+
+  const CerrarSesion = () =>{
+    logout();
+    localStorage.removeItem('token');
+  }
 
   if (isLoading) {
     return (
@@ -35,6 +41,7 @@ export const MovieList = () => {
     <ContenedorModulo>
       <TitlePage tabla="tabla">
         <h1>App Pelis</h1>
+        <Button onClick={CerrarSesion}>Cerrar sesion</Button>
       </TitlePage>
       <br />
 

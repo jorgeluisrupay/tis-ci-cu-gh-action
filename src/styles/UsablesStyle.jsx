@@ -20,7 +20,9 @@ export const TitlePage = styled.div`
 export const ContenedorModulo = styled.div`
   width: 100%;
   color: #fff;
-  margin-top: 30px;
+  padding-top: 30px;
+  background-color: #000;
+  padding: 50px;
 `;
 export const TablaContenedor = styled.div``;
 export const TablaSinDatos = styled.div`
