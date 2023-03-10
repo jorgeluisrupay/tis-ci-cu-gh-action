@@ -27,8 +27,8 @@ export const Rute = () => {
       )}
       {auth && (
         <>
-          <Route path="/movie" element={<MovieList logout={logout} />} />
-          <Route path="/movie/detail/:id" element={<Details />} />
+          <Route path="movie" element={<MovieList logout={logout} />} />
+          <Route path="movie/detail/:id" element={<Details />} />
         </>
       )}
       <Route path="*" element={<Navigate to={auth ? "/movie" : "/"} />} />
